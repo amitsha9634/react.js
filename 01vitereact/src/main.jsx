@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { render } from 'preact'
 import { App } from './app.jsx'
 
 function MyApp() {
@@ -24,6 +23,16 @@ function MyApp() {
 
 const anotherElement = (
     <a href="https://goggle.com" target='_blank'>Visit goggle</a>
+)
+
+
+const anotherUser = "chai aur react"
+
+const reactElement = React.createElement(
+    'a',
+    {href: 'https://goggle.com', target: '_blank'},
+    'Click me to visit goggle',
+    anotherElement
 )
 
 ReactDOM.createRoot(document.getElementById('root')).
